@@ -13,18 +13,16 @@ pipeline {
   agent any
   
   stages {
-    stage('Checkout') {
+    stage('build') {
       echo 'Checkout application...'
     }
-    stage('Test ') {
+    stage('test') {
       echo 'Test application...'
     }
-    stage('Build ') {
+    stage('deploy') {
       echo 'Build application...'
     }
     
-    stage('push image') {
-      echo 'Push application image...'
-    }
+    
   }
 }
